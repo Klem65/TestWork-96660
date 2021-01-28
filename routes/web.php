@@ -18,8 +18,6 @@ Route::get('/', [PhonesController::class, 'index'])->name('home');
 
 Route::post('create', [PhonesController::class, 'create']);
 
-Route::post('edit', [PhonesController::class, 'edit'])->name('edit');
-
 Route::post('update', [PhonesController::class, 'update']);
 
 Route::get('delete/{id}', [PhonesController::class, 'delete']);

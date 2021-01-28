@@ -23,11 +23,6 @@ class PhonesController extends Controller
         return redirect()->route('home');
     }
 
-    public function edit(Request $request)
-    {
-        return redirect()->route('edit');
-    }
-
     public function update(Request $request)
     {
         $validation = $request->validate(['name' => 'required|max:50', 'phone' => 'required|max:12|']);
