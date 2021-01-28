@@ -78,7 +78,7 @@
                                     name="phone"
                                     id="phone"
                                     autocomplete="given-name"
-                                    :value="number"
+                                    :value="phone"
                                     class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                 />
                             </div>
@@ -145,7 +145,7 @@
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                         <div class="text-sm text-gray-900">
-                                            {{ phone.number }}
+                                            {{ phone.phone }}
                                         </div>
                                     </td>
                                     <td
@@ -156,7 +156,7 @@
                                                 edit(
                                                     phone.id,
                                                     phone.name,
-                                                    phone.number
+                                                    phone.phone
                                                 )
                                             "
                                             href=""
@@ -194,19 +194,16 @@ export default {
             isActive: false,
             id: 0,
             name: "testName",
-            number: "testNumber"
+            phone: "testPhone"
         };
     },
-    mounted() {
-        console.log(this.phones);
-    },
     methods: {
-        edit(id, name, number) {
+        edit(id, name, phone) {
             event.preventDefault();
             this.isActive = true;
             this.id = id;
             this.name = name;
-            this.number = number;
+            this.phone = phone;
         },
         cancel() {
             this.isActive = false;

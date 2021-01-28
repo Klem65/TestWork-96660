@@ -2041,9 +2041,6 @@ __webpack_require__.r(__webpack_exports__);
       number: "testNumber"
     };
   },
-  mounted: function mounted() {
-    console.log(this.phones);
-  },
   methods: {
     edit: function edit(id, name, number) {
       event.preventDefault();
