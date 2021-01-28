@@ -16,11 +16,11 @@ class PhonesTableSeeder extends Seeder
     {
         $phones = [];
 
-        $phones[] = ['name' => 'Олег', 'number' => '89213452134'];
-        $phones[] = ['name' => 'Анна', 'number' => '89263352414'];
-        $phones[] = ['name' => 'Виктор', 'number' => '89213459846'];
-        $phones[] = ['name' => 'Алиса', 'number' => '89213487134'];
-        $phones[] = ['name' => 'Елена', 'number' => '89991252134'];
+        $phones[] = ['name' => 'Олег', 'phone' => '89213452134'];
+        $phones[] = ['name' => 'Анна', 'phone' => '89263352414'];
+        $phones[] = ['name' => 'Виктор', 'phone' => '89213459846'];
+        $phones[] = ['name' => 'Алиса', 'phone' => '89213487134'];
+        $phones[] = ['name' => 'Елена', 'phone' => '89991252134'];
 
         DB::table('phones')->insert($phones);
     }

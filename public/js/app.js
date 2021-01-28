@@ -2038,16 +2038,16 @@ __webpack_require__.r(__webpack_exports__);
       isActive: false,
       id: 0,
       name: "testName",
-      number: "testNumber"
+      phone: "testPhone"
     };
   },
   methods: {
-    edit: function edit(id, name, number) {
+    edit: function edit(id, name, phone) {
       event.preventDefault();
       this.isActive = true;
       this.id = id;
       this.name = name;
-      this.number = number;
+      this.phone = phone;
     },
     cancel: function cancel() {
       this.isActive = false;
@@ -19634,7 +19634,7 @@ var render = function() {
                         id: "phone",
                         autocomplete: "given-name"
                       },
-                      domProps: { value: _vm.number }
+                      domProps: { value: _vm.phone }
                     })
                   ])
                 ])
@@ -19738,7 +19738,7 @@ var render = function() {
                                 [
                                   _vm._v(
                                     "\n                                        " +
-                                      _vm._s(phone.number) +
+                                      _vm._s(phone.phone) +
                                       "\n                                    "
                                   )
                                 ]
@@ -19764,7 +19764,7 @@ var render = function() {
                                       return _vm.edit(
                                         phone.id,
                                         phone.name,
-                                        phone.number
+                                        phone.phone
                                       )
                                     }
                                   }
